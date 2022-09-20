@@ -1,0 +1,492 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&family=Noto+Sans+KR&family=Roboto+Mono:wght@200&display=swap');
+
+
+/* font-family: 'Manrope', sans-serif;
+font-family: Helvetica,Apple SD Gothic Neo,Arial,Malgun Gothic,sans-serif; */
+
+/* 전체설정 */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: relative;
+}
+
+/* 메뉴설정 */
+.logo {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -193px;
+    margin-top: 50px;
+}
+
+.logo li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.logo li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.logo li a img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+}
+
+.top {
+    width: 100%;
+    height: 60%;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+}
+
+.gnb {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.gnb li {
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.gnb li:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.gnb li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+}
+
+.util {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: 30%;
+    right: 9.1%;
+    z-index: 5;
+}
+
+.util li {
+    padding: 0 5px;
+    color: #fff;
+}
+
+.util li a {
+    display: block;
+    font-size: 14px;
+    color: #fff;
+}
+.util .cart {
+    position: relative;
+}
+.util .cart i {
+    color: #fff;
+    font-size: 28px;
+    padding-left: 10px;
+    z-index: 5;
+    cursor: pointer;
+}
+.cart span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    display: block;
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    z-index: 3;
+    opacity: 0;
+    text-align: center;
+}
+.cart span.on {
+    opacity: 1;
+}
+
+/* con00설정 */
+.con00 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main_img {
+    width: 40%;
+    height: 737px;
+    background-image: url(img/sub_main.png);
+    background-position: -780px -2px ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pd {
+    display: flex;
+    width: 60%;
+    height: 550px;
+    justify-content: space-between;
+    margin-top: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.list1 {
+    height: 550px;
+}
+
+.list1 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list1 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list1 p {
+    text-align: center;
+}
+
+.list1 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.list1 p:nth-child(3) {
+    font-size: 12px;
+}
+.list1 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list1 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list1 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list1 p a {}
+
+.list2 {
+    height: 550px;
+}
+
+.list2 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list2 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list2 p {
+    text-align: center;
+}
+
+.list2 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.list2 p:nth-child(3) {
+    font-size: 12px;
+}
+.list2 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list2 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list2 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list2 p a {}
+
+.list3 {}
+
+.list3 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list3 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list3 p {
+    text-align: center;
+}
+
+.list3 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.list3 p:nth-child(3) {
+    font-size: 12px;
+}
+.list3 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list3 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list3 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list3 p a {}
+
+
+/* 텍스트설정 */
+.text {
+    text-align: center;
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.text p {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.text p strong {}
+.text p em {
+    font-style: normal;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* con01설정 */
+.con01 {
+    height: 100%;
+    display: flex;
+}
+
+.main_img2 {
+    width: 40%;
+    height: 900px;
+    background-image: url(img/sub_main2.jpg);
+    background-position: center 120%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pd1 {
+    display: flex;
+    width: 60%;
+    height: 550px;
+    justify-content: space-between;
+    margin-top: 200px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.list4 {
+    height: 550px;
+}
+
+
+.list4 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l4.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list4 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list4 p {
+    text-align: center;
+}
+
+.list4 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+.list4 p:nth-child(3) {
+    font-size: 12px;
+}
+.list4 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list4 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list4 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list4 p a {}
+
+.list5 {
+}
+
+.list5 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l5.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list5 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list5 p {
+    text-align: center;
+}
+
+.list5 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.list5 p:nth-child(3) {
+    font-size: 12px;
+}
+.list5 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list5 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list5 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list5 p a {}
+
+.list6 {}
+
+.list6 li {
+    width: 250px;
+    height: 250px;
+    background-image: url(img/l6.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.list6 li:hover {
+    border-bottom: 2px solid #000;
+}
+
+.list6 p {
+    text-align: center;
+}
+
+.list6 p:nth-child(2) {
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+.list6 p:nth-child(3) {
+    font-size: 12px;
+}
+.list6 p:nth-child(4) {
+    padding: 15px 0;
+}
+.list6 p:nth-child(5) a {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 3px;
+    transition: all 0.5s;
+}
+.list6 p:nth-child(5):hover a {
+    border-bottom: 2px solid #000;
+    padding-bottom: 3px;
+}
+
+.list6 p a {}
